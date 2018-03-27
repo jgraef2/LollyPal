@@ -40,7 +40,7 @@ class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
 		super.viewDidAppear(animated)
         captureButton.delegate = self
 	}
-
+    //didTake photo: UIImage
 	func swiftyCam(_ swiftyCam: SwiftyCamViewController, didTake photo: UIImage) {
 		let newVC = PhotoViewController(image: photo)
 		self.present(newVC, animated: true, completion: nil)

@@ -7,7 +7,17 @@ target 'DemoSwiftyCam' do
 
   # Pods for DemoSwiftyCam
 
-pod 'Firebase'
+pod 'Firebase/Core'
+pod 'Firebase/Storage'
+pod 'Firebase/Database'
+pod 'Firebase/Auth'
+pod 'Firebase/Crash'
+pod 'Firebase/Performance'
+pod 'Firebase/Invites'
+pod 'Firebase/AdMob'
+pod 'Firebase/Messaging'
+pod 'FirebaseUI'
+pod 'GoogleSignIn'
 
 end
 
@@ -20,6 +30,5 @@ target 'SwiftyCam-iOS' do
 pod 'SwiftyCam'
 
 pod 'Firebase/Core'
-
 
 end

@@ -17,6 +17,35 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 import UIKit
 import AVFoundation
 
+import Firebase
+import FirebaseStorage
+import FirebaseCore
+import FirebaseInvites
+import FirebaseAuth
+import FirebaseMessaging
+import FirebaseDatabase
+import FirebaseCrash
+
+// Points to the root reference
+let storageRef = Storage.storage().reference()
+
+// Points to "images"
+let imagesRef = storageRef.child("images")
+
+// Points to "images/space.jpg"
+// Note that you can use variables to create child values
+let fileName = "space.jpg"
+let spaceRef = imagesRef.child(fileName)
+
+// File path is "images/space.jpg"
+let path = spaceRef.fullPath;
+
+// File name is "space.jpg"
+let name = spaceRef.name;
+
+// Points to "images"
+let images = spaceRef.parent()
+
 // MARK: View Controller Declaration
 
 /// A UIViewController Camera View Subclass
@@ -837,10 +866,28 @@ open class SwiftyCamViewController: UIViewController {
 				if (sampleBuffer != nil) {
 					let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(sampleBuffer!)
 					let image = self.processPhoto(imageData!)
-
+                    
 					// Call delegate and return new image
 					DispatchQueue.main.async {
 						self.cameraDelegate?.swiftyCam(self, didTake: image)
+                        
+                        print ("photo taken")
+                        
+                        // Create a reference to the file you want to upload
+                        let uploadRef = storageRef.child("images/lp\(NSDate()).jpg")
+                        
+                        // Upload the file to the path "images/lp\(NSData).jpg"
+                        _ = uploadRef.putData(imageData!, metadata: nil) { (metadata, error) in
+                            guard let metadata = metadata else {
+                                // Uh-oh, an error occurred!
+                                return
+                            }
+                            // Metadata contains file metadata such as size, content-type, and download URL.
+                            let downloadURL = metadata.downloadURL()
+                            // print ("Download URL: \(String(describing: downloadURL))")
+                            // print ("File Name: \(String(describing: metadata.name))")
+                        }
+                        
 					}
 					completionHandler(true)
 				} else {
@@ -1013,9 +1060,9 @@ extension SwiftyCamViewController : SwiftyCamButtonDelegate {
 	/// Set UILongPressGesture start to begin video
 
 	public func buttonDidBeginLongPress() {
-		startVideoRecording()
+	//	startVideoRecording()
 	}
-
+    
 	/// Set UILongPressGesture begin to begin end video
 
 
