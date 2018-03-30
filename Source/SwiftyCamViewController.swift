@@ -884,7 +884,7 @@ open class SwiftyCamViewController: UIViewController {
                             }
                             // Metadata contains file metadata such as size, content-type, and download URL.
                             let downloadURL = metadata.downloadURL()
-                            // print ("Download URL: \(String(describing: downloadURL))")
+                            print ("Download URL: \(String(describing: downloadURL))")
                             // print ("File Name: \(String(describing: metadata.name))")
                         }
                         

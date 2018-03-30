@@ -15,12 +15,18 @@ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 
 
 import UIKit
+import FirebaseAuth
 
 class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
     
     @IBOutlet weak var captureButton: SwiftyRecordButton!
     @IBOutlet weak var flipCameraButton: UIButton!
     @IBOutlet weak var flashButton: UIButton!
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var logInButton: UIButton!
     
     
 	override func viewDidLoad() {
@@ -100,6 +106,23 @@ class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
         print(error)
     }
 
+
+    
+    @IBAction func signInButtonTapped(_ sender: UIButton) {
+        
+        /*/ Do some form validation on the email and password
+        if let email = emailTextField.text, let pass = passwordTextField {
+            // Email seems legit, password strong enough?
+        }*/
+        let email = emailTextField.text
+        let password = passwordTextField.text
+        
+        Auth.auth().createUser(withEmail: email!, password: password!) { (user, error) in
+            // ...
+        }
+    }
+    
+    
     @IBAction func cameraSwitchTapped(_ sender: Any) {
         switchCamera()
     }

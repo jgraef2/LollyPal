@@ -23,10 +23,9 @@ import FirebaseAuth
 import FirebaseMessaging
 import FirebaseDatabase
 import FirebaseCrash
-import GoogleSignIn
 import FirebaseAuthUI
-import FirebaseGoogleAuthUI
 import FirebasePhoneAuthUI
+import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
