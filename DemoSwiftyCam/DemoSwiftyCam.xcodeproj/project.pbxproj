@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		032391C720673A45006ABCC2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 032391C620673A45006ABCC2 /* GoogleService-Info.plist */; };
 		032391C820673A45006ABCC2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 032391C620673A45006ABCC2 /* GoogleService-Info.plist */; };
+		036CCCB3206E015700934950 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CCCB2206E015600934950 /* SignUpViewController.swift */; };
+		03EC94D7206F59AE008DD519 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EC94D6206F59AE008DD519 /* LoginViewController.swift */; };
+		03EC94D92070176C008DD519 /* GetStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EC94D82070176C008DD519 /* GetStarted.swift */; };
 		05D2A9B81E80BE9700B479E9 /* SwiftyCam-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D2A9B61E80BE9700B479E9 /* SwiftyCam-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05D2A9BC1E80BE9D00B479E9 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675A9891E00A74A00B80903 /* PreviewView.swift */; };
 		05D2A9BD1E80BE9D00B479E9 /* SwiftyCamButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675A98A1E00A74A00B80903 /* SwiftyCamButton.swift */; };
@@ -32,6 +35,9 @@
 
 /* Begin PBXFileReference section */
 		032391C620673A45006ABCC2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		036CCCB2206E015600934950 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		03EC94D6206F59AE008DD519 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		03EC94D82070176C008DD519 /* GetStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStarted.swift; sourceTree = "<group>"; };
 		05D2A9B41E80BE9700B479E9 /* SwiftyCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyCam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05D2A9B61E80BE9700B479E9 /* SwiftyCam-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftyCam-iOS.h"; sourceTree = "<group>"; };
 		05D2A9B71E80BE9700B479E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,6 +119,9 @@
 				1675A9751E00A68300B80903 /* AppDelegate.swift */,
 				1675A9771E00A68300B80903 /* ViewController.swift */,
 				16298B551E2703DC0056D413 /* SwiftyRecordButton.swift */,
+				036CCCB2206E015600934950 /* SignUpViewController.swift */,
+				03EC94D82070176C008DD519 /* GetStarted.swift */,
+				03EC94D6206F59AE008DD519 /* LoginViewController.swift */,
 				168505E71E288B4C005B4537 /* VideoViewController.swift */,
 				168505E91E288D80005B4537 /* PhotoViewController.swift */,
 				1675A9791E00A68300B80903 /* Main.storyboard */,
@@ -419,10 +428,13 @@
 				168505E81E288B4C005B4537 /* VideoViewController.swift in Sources */,
 				1675A9761E00A68300B80903 /* AppDelegate.swift in Sources */,
 				1675A98F1E00A74A00B80903 /* SwiftyCamViewController.swift in Sources */,
+				036CCCB3206E015700934950 /* SignUpViewController.swift in Sources */,
+				03EC94D92070176C008DD519 /* GetStarted.swift in Sources */,
 				168505EA1E288D80005B4537 /* PhotoViewController.swift in Sources */,
 				16298B561E2703DC0056D413 /* SwiftyRecordButton.swift in Sources */,
 				1675A98D1E00A74A00B80903 /* PreviewView.swift in Sources */,
 				1675A98E1E00A74A00B80903 /* SwiftyCamButton.swift in Sources */,
+				03EC94D7206F59AE008DD519 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

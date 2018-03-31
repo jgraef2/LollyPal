@@ -19,14 +19,10 @@ import FirebaseAuth
 
 class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
     
-    @IBOutlet weak var captureButton: SwiftyRecordButton!
+    @IBOutlet weak var captureButton: SwiftyRecordButton?
     @IBOutlet weak var flipCameraButton: UIButton!
     @IBOutlet weak var flashButton: UIButton!
-    
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var signInButton: UIButton!
-    @IBOutlet weak var logInButton: UIButton!
+    @IBOutlet weak var userLabel: UILabel!
     
     
 	override func viewDidLoad() {
@@ -44,7 +40,7 @@ class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
 
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
-        captureButton.delegate = self
+        captureButton?.delegate = self
 	}
     //didTake photo: UIImage
 	func swiftyCam(_ swiftyCam: SwiftyCamViewController, didTake photo: UIImage) {
@@ -54,7 +50,7 @@ class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
 
 	func swiftyCam(_ swiftyCam: SwiftyCamViewController, didBeginRecordingVideo camera: SwiftyCamViewController.CameraSelection) {
 		print("Did Begin Recording")
-		captureButton.growButton()
+		captureButton?.growButton()
 		UIView.animate(withDuration: 0.25, animations: {
 			self.flashButton.alpha = 0.0
 			self.flipCameraButton.alpha = 0.0
@@ -63,7 +59,7 @@ class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
 
 	func swiftyCam(_ swiftyCam: SwiftyCamViewController, didFinishRecordingVideo camera: SwiftyCamViewController.CameraSelection) {
 		print("Did finish Recording")
-		captureButton.shrinkButton()
+        captureButton?.shrinkButton()
 		UIView.animate(withDuration: 0.25, animations: {
 			self.flashButton.alpha = 1.0
 			self.flipCameraButton.alpha = 1.0
@@ -106,30 +102,23 @@ class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
         print(error)
     }
 
-
-    
-    @IBAction func signInButtonTapped(_ sender: UIButton) {
-        
-        /*/ Do some form validation on the email and password
-        if let email = emailTextField.text, let pass = passwordTextField {
-            // Email seems legit, password strong enough?
-        }*/
-        let email = emailTextField.text
-        let password = passwordTextField.text
-        
-        Auth.auth().createUser(withEmail: email!, password: password!) { (user, error) in
-            // ...
-        }
-    }
     
     
     @IBAction func cameraSwitchTapped(_ sender: Any) {
         switchCamera()
+        if Auth.auth().currentUser != nil {
+            let user = Auth.auth().currentUser?.email
+            print ("User:\(String(describing: user))")
+            userLabel.text = "User:\(String(describing: user))"
+        } else {
+            print ("no one signed in bitches")
+        }
     }
     
     @IBAction func toggleFlashTapped(_ sender: Any) {
         flashEnabled = !flashEnabled
-        
+        //log user out
+        try! Auth.auth().signOut()
         if flashEnabled == true {
             flashButton.setImage(#imageLiteral(resourceName: "flash"), for: UIControlState())
         } else {
