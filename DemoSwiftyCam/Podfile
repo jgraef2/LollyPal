@@ -18,6 +18,7 @@ pod 'Firebase/AdMob'
 pod 'Firebase/Messaging'
 pod 'FirebaseUI'
 pod 'GoogleSignIn'
+pod 'Firebase/Firestore'
 
 end
 

@@ -42,6 +42,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction func LoginButtonTapped(_ sender: Any) {
             loginUser()
         }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        emailTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+    }
     }
     
 

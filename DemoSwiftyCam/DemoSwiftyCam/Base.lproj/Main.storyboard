@@ -9,6 +9,14 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="FredokaOne-Regular.ttf">
+            <string>FredokaOne-Regular</string>
+        </array>
+        <array key="Nunito-Light.ttf">
+            <string>Nunito-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -48,7 +56,7 @@
                                     <action selector="toggleFlashTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C5u-0g-Kim"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTR-4j-E7G">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTR-4j-E7G">
                                 <rect key="frame" x="70" y="247" width="251" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -118,51 +126,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TS1-J0-5yi">
-                                <rect key="frame" x="107" y="566" width="160" height="30"/>
+                                <rect key="frame" x="107" y="472" width="160" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Get Started"/>
+                                <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="23"/>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleColor" red="0.29425126314163208" green="0.082301847636699677" blue="0.17984455823898315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="1aK-Lx-ZJ6" kind="show" id="I4E-H8-Ht5"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ptk-WW-pa0">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="194"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lplogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ptk-WW-pa0">
+                                <rect key="frame" x="55" y="28" width="264" height="255"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWA-yF-OHt">
-                                <rect key="frame" x="17" y="-22" width="343" height="238"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Totally free, paid for by ads that you won't hate" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iH-89-Zdf">
+                                <rect key="frame" x="6" y="403" width="363" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Nunito-Light" family="Nunito" pointSize="14"/>
+                                <color key="textColor" red="0.29425126309999999" green="0.082301847639999995" blue="0.1798445582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VKu-WW-85T">
-                                <rect key="frame" x="0.0" y="341" width="375" height="122"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Share prints with your pals at the tap of a shutter." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xw1-qC-9X8">
+                                <rect key="frame" x="30" y="259" width="314" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="illustration showing process" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXT-lh-icV">
-                                <rect key="frame" x="17" y="364" width="343" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Send And Receive Free Prints From All Your Pals" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xw1-qC-9X8">
-                                <rect key="frame" x="78" y="187" width="221" height="161"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Paid for by ads that you don't hate" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iH-89-Zdf">
-                                <rect key="frame" x="78" y="505" width="224" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Nunito-Light" family="Nunito" pointSize="25"/>
+                                <color key="textColor" red="0.29425126314163208" green="0.082301847636699677" blue="0.17984455823898315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.85682457690000002" blue="0.1704711914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qFQ-sb-Koi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -182,37 +175,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5ro-qk-Nn2">
-                                <rect key="frame" x="16" y="246" width="343" height="228.5"/>
+                                <rect key="frame" x="16" y="291" width="343" height="252.5"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TCo-Cc-h3B">
-                                        <rect key="frame" x="20" y="0.0" width="303" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TCo-Cc-h3B">
+                                        <rect key="frame" x="20" y="0.0" width="303" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.85682457690000002" blue="0.1704711914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.29425126309999999" green="0.082301847639999995" blue="0.1798445582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.29425126309999999" green="0.082301847639999995" blue="0.1798445582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Light" family="Nunito" pointSize="26"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="join"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ifn-O5-6nP">
-                                        <rect key="frame" x="20" y="50" width="303" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ifn-O5-6nP">
+                                        <rect key="frame" x="20" y="60" width="303" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.85682457690000002" blue="0.1704711914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.29425126309999999" green="0.082301847639999995" blue="0.1798445582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.29425126314163208" green="0.082301847636699677" blue="0.17984455823898315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Light" family="Nunito" pointSize="26"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="co0-9t-4Ps">
-                                        <rect key="frame" x="150.5" y="100" width="42" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="155" y="120" width="33.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Light" family="Nunito" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCr-ET-zYG">
-                                        <rect key="frame" x="135" y="140.5" width="73" height="38"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <state key="normal" title="Sign Up"/>
+                                        <rect key="frame" x="130" y="159.5" width="83" height="40"/>
+                                        <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
+                                        <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="23"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" red="0.29425126309999999" green="0.082301847639999995" blue="0.1798445582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="signUpButtonTapped:" destination="1aK-Lx-ZJ6" eventType="touchUpInside" id="9nz-YM-55N"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rr-kY-VQD">
-                                        <rect key="frame" x="122.5" y="198.5" width="98" height="30"/>
-                                        <state key="normal" title="Existing User?"/>
+                                        <rect key="frame" x="124.5" y="219.5" width="94" height="33"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Light" family="Nunito" pointSize="15"/>
+                                        <state key="normal" title="Existing User?">
+                                            <color key="titleColor" red="0.93834120040000002" green="0.2284832299" blue="0.2307527959" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="nCX-77-jKS" kind="show" id="iTY-LN-B3k"/>
                                         </connections>
@@ -225,12 +228,16 @@
                                     <constraint firstItem="Ifn-O5-6nP" firstAttribute="leading" secondItem="5ro-qk-Nn2" secondAttribute="leading" constant="20" id="cdP-FB-lFH"/>
                                 </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lplogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="XfU-bL-u9u">
+                                <rect key="frame" x="55" y="28" width="264" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.85682457690000002" blue="0.1704711914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="5ro-qk-Nn2" secondAttribute="trailing" id="2MN-ev-2H6"/>
                             <constraint firstItem="5ro-qk-Nn2" firstAttribute="leading" secondItem="Zf6-Yb-294" secondAttribute="leadingMargin" id="O9A-YK-gdv"/>
-                            <constraint firstItem="5ro-qk-Nn2" firstAttribute="centerY" secondItem="Zf6-Yb-294" secondAttribute="centerY" constant="26.5" id="tdQ-HD-zc7"/>
+                            <constraint firstItem="5ro-qk-Nn2" firstAttribute="centerY" secondItem="Zf6-Yb-294" secondAttribute="centerY" constant="83.75" id="tdQ-HD-zc7"/>
                         </constraints>
                     </view>
                     <connections>
@@ -257,38 +264,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lplogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="OlA-9m-e8I">
+                                <rect key="frame" x="55" y="20" width="264" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="center" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7jg-DV-Ou3">
-                                <rect key="frame" x="26" y="148" width="323" height="228.5"/>
+                                <rect key="frame" x="26" y="283" width="323" height="255.5"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tml-H9-kDK">
-                                        <rect key="frame" x="20" y="0.0" width="283" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tml-H9-kDK">
+                                        <rect key="frame" x="20" y="0.0" width="283" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.85682457690000002" blue="0.1704711914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.29425126309999999" green="0.082301847639999995" blue="0.1798445582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Light" family="Nunito" pointSize="26"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zlv-1X-pbJ">
-                                        <rect key="frame" x="20" y="50" width="283" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zlv-1X-pbJ">
+                                        <rect key="frame" x="20" y="60" width="283" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.85682457690000002" blue="0.1704711914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.29425126309999999" green="0.082301847639999995" blue="0.1798445582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Light" family="Nunito" pointSize="26"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4Y-Yx-X21">
-                                        <rect key="frame" x="42" y="100" width="239" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="42" y="120" width="239" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Light" family="Nunito" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hi7-Zg-U4R">
-                                        <rect key="frame" x="26" y="140.5" width="271" height="38"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <state key="normal" title="Login"/>
+                                        <rect key="frame" x="26" y="160.5" width="271" height="42"/>
+                                        <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="24"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="0.29425126309999999" green="0.082301847639999995" blue="0.1798445582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="LoginButtonTapped:" destination="nCX-77-jKS" eventType="touchUpInside" id="cyp-TW-pZ3"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOj-u3-zOz">
-                                        <rect key="frame" x="14" y="198.5" width="295" height="30"/>
-                                        <state key="normal" title="Sign Up"/>
+                                        <rect key="frame" x="14" y="222.5" width="295" height="33"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Light" family="Nunito" pointSize="15"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" red="0.93834120040000002" green="0.2284832299" blue="0.2307527959" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="1aK-Lx-ZJ6" kind="show" id="OSV-7O-NIp"/>
                                         </connections>
@@ -305,11 +325,11 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.85682457690000002" blue="0.1704711914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="7jg-DV-Ou3" secondAttribute="trailing" constant="10" id="3uy-Bn-qdc"/>
                             <constraint firstItem="7jg-DV-Ou3" firstAttribute="leading" secondItem="hNN-GG-hXm" secondAttribute="leadingMargin" constant="10" id="HwQ-lm-maZ"/>
-                            <constraint firstItem="7jg-DV-Ou3" firstAttribute="top" secondItem="z41-0m-Alv" secondAttribute="bottom" constant="128" id="tn4-Va-wBK"/>
+                            <constraint firstItem="7jg-DV-Ou3" firstAttribute="top" secondItem="z41-0m-Alv" secondAttribute="bottom" constant="263" id="tn4-Va-wBK"/>
                         </constraints>
                     </view>
                     <connections>
@@ -326,7 +346,7 @@
         <!--Return Address View Controller-->
         <scene sceneID="gnt-0u-cNU">
             <objects>
-                <viewController id="m4R-VP-w5a" customClass="returnAddressViewController" customModule="DemoSwiftyCam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="m4R-VP-w5a" customClass="ReturnAddressViewController" customModule="DemoSwiftyCam" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H6k-Bp-Xgd"/>
                         <viewControllerLayoutGuide type="bottom" id="Qwo-aK-riL"/>
@@ -338,44 +358,63 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="John Smith" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hGU-6a-4la">
                                 <rect key="frame" x="69" y="269" width="236" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.85682457690000002" blue="0.1704711914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.29425126309999999" green="0.082301847639999995" blue="0.1798445582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Nunito-Light" family="Nunito" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="San Diego, CA 12345" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G1o-1E-AbA">
                                 <rect key="frame" x="69" y="368" width="236" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.85682457690000002" blue="0.1704711914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.29425126309999999" green="0.082301847639999995" blue="0.1798445582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Nunito-Light" family="Nunito" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="123 Maple Street" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2Q-jf-DFs">
                                 <rect key="frame" x="69" y="318" width="236" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.85682457690000002" blue="0.1704711914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.29425126309999999" green="0.082301847639999995" blue="0.1798445582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Nunito-Light" family="Nunito" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejF-3X-uqj">
-                                <rect key="frame" x="139" y="415" width="96" height="30"/>
+                                <rect key="frame" x="139" y="438" width="96" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Submit"/>
+                                <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="23"/>
+                                <state key="normal" title="Go!">
+                                    <color key="titleColor" red="0.29425126309999999" green="0.082301847639999995" blue="0.1798445582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="RWV-58-IoS"/>
+                                    <action selector="submitButtonTapped:" destination="m4R-VP-w5a" eventType="touchUpInside" id="YTI-w4-ZEA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter the return address your pals will see." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsX-m5-b3z">
-                                <rect key="frame" x="40" y="100" width="294" height="161"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkJ-Ug-7MG">
+                                <rect key="frame" x="33" y="43" width="308" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="37"/>
+                                <color key="textColor" red="0.29425126309999999" green="0.082301847639999995" blue="0.1798445582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter the return address your pals will see:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsX-m5-b3z">
+                                <rect key="frame" x="33" y="159" width="308" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Nunito-Light" family="Nunito" pointSize="25"/>
+                                <color key="textColor" red="0.29425126309999999" green="0.082301847639999995" blue="0.1798445582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.85682457690000002" blue="0.1704711914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" id="G81-su-I3w"/>
+                        <outlet property="addressOneTextField" destination="f2Q-jf-DFs" id="hEE-6Z-IvN"/>
+                        <outlet property="addressTwoTextField" destination="G1o-1E-AbA" id="xNK-cB-IDP"/>
+                        <outlet property="nameTextField" destination="hGU-6a-4la" id="ksJ-vz-CVg"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToViewController" id="G81-su-I3w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zNb-5D-IAK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -386,6 +425,7 @@
     <resources>
         <image name="flashOutline" width="18" height="30"/>
         <image name="flipCamera" width="30" height="23"/>
+        <image name="lplogo.png" width="792" height="503"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="I4E-H8-Ht5"/>

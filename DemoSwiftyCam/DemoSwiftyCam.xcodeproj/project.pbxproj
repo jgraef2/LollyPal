@@ -12,6 +12,23 @@
 		036CCCB3206E015700934950 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CCCB2206E015600934950 /* SignUpViewController.swift */; };
 		03EC94D7206F59AE008DD519 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EC94D6206F59AE008DD519 /* LoginViewController.swift */; };
 		03EC94D92070176C008DD519 /* GetStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EC94D82070176C008DD519 /* GetStarted.swift */; };
+		03EC94DB207022AF008DD519 /* ReturnAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EC94DA207022AF008DD519 /* ReturnAddressViewController.swift */; };
+		03F00E7E2070A5A100473E94 /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03F00E732070A54C00473E94 /* Nunito-ExtraBold.ttf */; };
+		03F00E7F2070A5A100473E94 /* Nunito-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03F00E742070A54C00473E94 /* Nunito-ExtraBoldItalic.ttf */; };
+		03F00E802070A5A100473E94 /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03F00E782070A55300473E94 /* Nunito-Light.ttf */; };
+		03F00E812070A5A100473E94 /* FredokaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03F00E4A2070A49C00473E94 /* FredokaOne-Regular.ttf */; };
+		03F00E822070A5A100473E94 /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03F00E5B2070A51500473E94 /* Nunito-Black.ttf */; };
+		03F00E832070A5A100473E94 /* Nunito-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03F00E532070A51400473E94 /* Nunito-BlackItalic.ttf */; };
+		03F00E842070A5A100473E94 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03F00E4C2070A51200473E94 /* Nunito-Bold.ttf */; };
+		03F00E852070A5A100473E94 /* Nunito-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03F00E4D2070A51200473E94 /* Nunito-BoldItalic.ttf */; };
+		03F00E862070A5A100473E94 /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03F00E512070A51300473E94 /* Nunito-ExtraLight.ttf */; };
+		03F00E872070A5A100473E94 /* Nunito-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03F00E572070A51500473E94 /* Nunito-ExtraLightItalic.ttf */; };
+		03F00E882070A5A100473E94 /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03F00E4F2070A51300473E94 /* Nunito-Italic.ttf */; };
+		03F00E892070A5A100473E94 /* Nunito-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03F00E4E2070A51300473E94 /* Nunito-LightItalic.ttf */; };
+		03F00E8A2070A5A100473E94 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03F00E552070A51400473E94 /* Nunito-Regular.ttf */; };
+		03F00E8B2070A5A100473E94 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03F00E502070A51300473E94 /* Nunito-SemiBold.ttf */; };
+		03F00E8C2070A5A100473E94 /* Nunito-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03F00E5C2070A51600473E94 /* Nunito-SemiBoldItalic.ttf */; };
+		03F00E8E2070A74300473E94 /* lplogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F00E8D2070A74300473E94 /* lplogo.png */; };
 		05D2A9B81E80BE9700B479E9 /* SwiftyCam-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D2A9B61E80BE9700B479E9 /* SwiftyCam-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05D2A9BC1E80BE9D00B479E9 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675A9891E00A74A00B80903 /* PreviewView.swift */; };
 		05D2A9BD1E80BE9D00B479E9 /* SwiftyCamButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675A98A1E00A74A00B80903 /* SwiftyCamButton.swift */; };
@@ -38,6 +55,23 @@
 		036CCCB2206E015600934950 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		03EC94D6206F59AE008DD519 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		03EC94D82070176C008DD519 /* GetStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStarted.swift; sourceTree = "<group>"; };
+		03EC94DA207022AF008DD519 /* ReturnAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnAddressViewController.swift; sourceTree = "<group>"; };
+		03F00E4A2070A49C00473E94 /* FredokaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FredokaOne-Regular.ttf"; sourceTree = "<group>"; };
+		03F00E4C2070A51200473E94 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		03F00E4D2070A51200473E94 /* Nunito-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BoldItalic.ttf"; sourceTree = "<group>"; };
+		03F00E4E2070A51300473E94 /* Nunito-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-LightItalic.ttf"; sourceTree = "<group>"; };
+		03F00E4F2070A51300473E94 /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
+		03F00E502070A51300473E94 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		03F00E512070A51300473E94 /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
+		03F00E532070A51400473E94 /* Nunito-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BlackItalic.ttf"; sourceTree = "<group>"; };
+		03F00E552070A51400473E94 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		03F00E572070A51500473E94 /* Nunito-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		03F00E5B2070A51500473E94 /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
+		03F00E5C2070A51600473E94 /* Nunito-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		03F00E732070A54C00473E94 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nunito-ExtraBold.ttf"; path = "../../../../../Desktop/1650/SLIPPERY NOODLE/indesign/Document fonts/Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		03F00E742070A54C00473E94 /* Nunito-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nunito-ExtraBoldItalic.ttf"; path = "../../../../../Desktop/LollyPal_Assets/02_BRAND/Nunito/Nunito-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		03F00E782070A55300473E94 /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nunito-Light.ttf"; path = "../../../../../Desktop/1650/SLIPPERY NOODLE/indesign/Document fonts/Nunito-Light.ttf"; sourceTree = "<group>"; };
+		03F00E8D2070A74300473E94 /* lplogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lplogo.png; sourceTree = "<group>"; };
 		05D2A9B41E80BE9700B479E9 /* SwiftyCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyCam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05D2A9B61E80BE9700B479E9 /* SwiftyCam-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftyCam-iOS.h"; sourceTree = "<group>"; };
 		05D2A9B71E80BE9700B479E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,6 +117,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03F00E6E2070A52200473E94 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				03F00E732070A54C00473E94 /* Nunito-ExtraBold.ttf */,
+				03F00E742070A54C00473E94 /* Nunito-ExtraBoldItalic.ttf */,
+				03F00E782070A55300473E94 /* Nunito-Light.ttf */,
+				03F00E4A2070A49C00473E94 /* FredokaOne-Regular.ttf */,
+				03F00E5B2070A51500473E94 /* Nunito-Black.ttf */,
+				03F00E532070A51400473E94 /* Nunito-BlackItalic.ttf */,
+				03F00E4C2070A51200473E94 /* Nunito-Bold.ttf */,
+				03F00E4D2070A51200473E94 /* Nunito-BoldItalic.ttf */,
+				03F00E512070A51300473E94 /* Nunito-ExtraLight.ttf */,
+				03F00E572070A51500473E94 /* Nunito-ExtraLightItalic.ttf */,
+				03F00E4F2070A51300473E94 /* Nunito-Italic.ttf */,
+				03F00E4E2070A51300473E94 /* Nunito-LightItalic.ttf */,
+				03F00E552070A51400473E94 /* Nunito-Regular.ttf */,
+				03F00E502070A51300473E94 /* Nunito-SemiBold.ttf */,
+				03F00E5C2070A51600473E94 /* Nunito-SemiBoldItalic.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
 		05D2A9B51E80BE9700B479E9 /* SwiftyCam-iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,11 +177,14 @@
 				16298B551E2703DC0056D413 /* SwiftyRecordButton.swift */,
 				036CCCB2206E015600934950 /* SignUpViewController.swift */,
 				03EC94D82070176C008DD519 /* GetStarted.swift */,
+				03EC94DA207022AF008DD519 /* ReturnAddressViewController.swift */,
 				03EC94D6206F59AE008DD519 /* LoginViewController.swift */,
 				168505E71E288B4C005B4537 /* VideoViewController.swift */,
 				168505E91E288D80005B4537 /* PhotoViewController.swift */,
 				1675A9791E00A68300B80903 /* Main.storyboard */,
+				03F00E6E2070A52200473E94 /* fonts */,
 				1675A97C1E00A68300B80903 /* Assets.xcassets */,
+				03F00E8D2070A74300473E94 /* lplogo.png */,
 				1675A97E1E00A68300B80903 /* LaunchScreen.storyboard */,
 				1675A9811E00A68300B80903 /* Info.plist */,
 				032391C620673A45006ABCC2 /* GoogleService-Info.plist */,
@@ -273,9 +332,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				1675A9801E00A68300B80903 /* LaunchScreen.storyboard in Resources */,
+				03F00E882070A5A100473E94 /* Nunito-Italic.ttf in Resources */,
+				03F00E802070A5A100473E94 /* Nunito-Light.ttf in Resources */,
 				1675A97D1E00A68300B80903 /* Assets.xcassets in Resources */,
+				03F00E7E2070A5A100473E94 /* Nunito-ExtraBold.ttf in Resources */,
 				1675A97B1E00A68300B80903 /* Main.storyboard in Resources */,
+				03F00E8E2070A74300473E94 /* lplogo.png in Resources */,
 				032391C720673A45006ABCC2 /* GoogleService-Info.plist in Resources */,
+				03F00E852070A5A100473E94 /* Nunito-BoldItalic.ttf in Resources */,
+				03F00E872070A5A100473E94 /* Nunito-ExtraLightItalic.ttf in Resources */,
+				03F00E842070A5A100473E94 /* Nunito-Bold.ttf in Resources */,
+				03F00E892070A5A100473E94 /* Nunito-LightItalic.ttf in Resources */,
+				03F00E7F2070A5A100473E94 /* Nunito-ExtraBoldItalic.ttf in Resources */,
+				03F00E8C2070A5A100473E94 /* Nunito-SemiBoldItalic.ttf in Resources */,
+				03F00E8B2070A5A100473E94 /* Nunito-SemiBold.ttf in Resources */,
+				03F00E812070A5A100473E94 /* FredokaOne-Regular.ttf in Resources */,
+				03F00E822070A5A100473E94 /* Nunito-Black.ttf in Resources */,
+				03F00E832070A5A100473E94 /* Nunito-BlackItalic.ttf in Resources */,
+				03F00E8A2070A5A100473E94 /* Nunito-Regular.ttf in Resources */,
+				03F00E862070A5A100473E94 /* Nunito-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +417,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DemoSwiftyCam/Pods-DemoSwiftyCam-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
@@ -350,12 +426,17 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac-a483a505/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb-iOS8.0/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb-iOS11.2/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
@@ -364,6 +445,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -432,6 +517,7 @@
 				03EC94D92070176C008DD519 /* GetStarted.swift in Sources */,
 				168505EA1E288D80005B4537 /* PhotoViewController.swift in Sources */,
 				16298B561E2703DC0056D413 /* SwiftyRecordButton.swift in Sources */,
+				03EC94DB207022AF008DD519 /* ReturnAddressViewController.swift in Sources */,
 				1675A98D1E00A74A00B80903 /* PreviewView.swift in Sources */,
 				1675A98E1E00A74A00B80903 /* SwiftyCamButton.swift in Sources */,
 				03EC94D7206F59AE008DD519 /* LoginViewController.swift in Sources */,
